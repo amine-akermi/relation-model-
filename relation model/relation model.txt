@@ -1,0 +1,24 @@
+Relational model 
+ Lead    :    Employees (employee_id, Employee_name, speciality, #director_id)
+
+
+
+                         *Employees (Employee_id, Employee_name, #Hotels_id)
+Works for : 
+                           *Hotels (Hotels_id, Hotels_name, type)
+
+
+
+
+                            *Room (Room_id, Floor, #Hotels_id)
+Composed :                           *Hotels (Hotels_id, Hotels_name, type)
+
+
+                 *Room (Room_id, Floor,#Category)
+
+
+
+
+Has 
+
+              *Category (Category_id, Category _name, Price, Bed_numbers)
